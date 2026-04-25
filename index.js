@@ -1,3 +1,4 @@
+/*hoyrs,minute,second*/
 
 const hour = document.getElementById("hour");
 const minute = document.getElementById("minute");
@@ -5,6 +6,8 @@ const second = document.getElementById("second");
 
 const digital = document.getElementById("digital");
 const dateText = document.getElementById("date");
+
+/*clock*/
 
 function clock(){
 
