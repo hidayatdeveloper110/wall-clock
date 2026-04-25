@@ -1,0 +1,122 @@
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial;
+}
+
+body{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+transition:.5s;
+}
+
+/* DARK MODE */
+
+body.dark{
+background:#0f172a;
+color:white;
+}
+
+/* LIGHT MODE */
+
+body.light{
+background:#f1f5f9;
+color:#111;
+}
+
+/* BUTTON */
+
+button{
+position:absolute;
+top:40px;
+right:40px;
+padding:10px 20px;
+font-size:18px;
+border:none;
+border-radius:10px;
+cursor:pointer;
+}
+
+/* CONTAINER */
+
+.container{
+text-align:center;
+}
+
+/* CLOCK */
+
+.clock{
+width:300px;
+height:300px;
+border-radius:50%;
+border:10px solid #00eaff;
+position:relative;
+margin:auto;
+
+box-shadow:
+0 0 30px #00eaff,
+inset 0 0 30px #00eaff;
+}
+
+/* HANDS */
+
+.hand{
+position:absolute;
+bottom:50%;
+left:50%;
+transform-origin:bottom;
+transform:translateX(-50%);
+border-radius:10px;
+}
+
+.hour{
+height:70px;
+width:8px;
+background:white;
+}
+
+.minute{
+height:100px;
+width:6px;
+background:#00eaff;
+}
+
+.second{
+height:120px;
+width:3px;
+background:red;
+}
+
+/* CENTER */
+
+.center{
+width:14px;
+height:14px;
+background:white;
+border-radius:50%;
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+}
+
+/* DIGITAL */
+
+#digital{
+margin-top:30px;
+font-size:40px;
+letter-spacing:3px;
+}
+
+/* DATE */
+
+#date{
+margin-top:10px;
+font-size:20px;
+opacity:.8;
+}
+
